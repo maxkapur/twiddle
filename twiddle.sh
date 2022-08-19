@@ -6,12 +6,12 @@ if [ $# != 2 ]; then
 fi
 
 if [ ! -f $1 ]; then
-    echo "Error: File $1 doesn't exist."
+    echo "Error: File $1 doesn't exist, or is a directory."
     exit 1
 fi
 
 if [ ! -f $2 ]; then
-    echo "Error: File $2 doesn't exist."
+    echo "Error: File $2 doesn't exist, or is a directory."
     exit 1
 fi
 
